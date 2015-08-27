@@ -4,7 +4,7 @@
 */
 
 // We use these to define default font stacks
-$font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
@@ -19,6 +19,7 @@ $snow        : #F9F9F9;
 $vapor       : #F6F6F6;
 $white-smoke : #F5F5F5;
 $silver      : #EFEFEF;
+$white      :  pink;
 $smoke       : #EEEEEE;
 $gainsboro   : #DDDDDD;
 $iron        : #CCCCCC;
@@ -34,7 +35,7 @@ $jet         : #222222;
 $black       : #000000;
 
 // We use these as default colors throughout
-$primary-color: #008CBA;
+$primary-color: #359b74;
 $secondary-color: #e7e7e7;
 $alert-color: #f04124;
 $success-color: #43AC6A;
@@ -49,7 +50,7 @@ $body-font-weight: $font-weight-normal;
 $body-font-style: normal;
 $header-font-weight: 300;
 $header-text-rendering: optimizeLegibility;
-$topbar-link-weight: bold;
+$topbar-link-weight: normal;
 
 // Media query breakpoints
 $small-breakpoint:  em-calc(640);

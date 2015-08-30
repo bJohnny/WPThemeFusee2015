@@ -1,0 +1,27 @@
+.tiles-container {
+  margin-top: rem-calc(68);
+}
+
+.marketing-box {
+  background-color: $primary-gray;
+  padding: rem-calc(91) rem-calc(48);
+  position: relative;
+  .icon {
+    position: absolute;
+    top: rem-calc(-31);
+    left: 50%;
+    margin-left: rem-calc(-47);
+    width: rem-calc(94);
+    height: rem-calc(94);
+    background-color: $primary-color;
+    border-radius: 94px;
+    display: table;
+    i {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      color: $white;
+      font-size: rem-calc(58);
+    }
+  }
+}

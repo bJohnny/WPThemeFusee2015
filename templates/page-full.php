@@ -27,13 +27,13 @@ get_header(); ?>
               </div>
             </li>
           </ul>
-
+    <hr>
 
 	<?php /* Start loop */ ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
-				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<h2 class="entry-title"><?php the_title(); ?></h2>
 			</header>
 			<div class="entry-content">
 				<?php the_content(); ?>
@@ -45,8 +45,33 @@ get_header(); ?>
 			<?php comments_template(); ?>
 		</article>
 	<?php endwhile; // End the loop ?>
+      <hr>
 
 	</div>
+</div>
+
+<div class="tiles-container">
+  <div class="row">
+    <div class="small-12 large-4 columns">
+      <div class="marketing-box">
+        <div class="icon">
+          <i class="fa fa-female"></i>
+        </div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cupiditate distinctio, eius id modi nobis quia!
+      </div>
+
+    </div>
+    <div class="small-12 large-4 columns">
+      <div class="marketing-box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor fugiat ipsam maxime minus quod rerum.
+      </div>
+    </div>
+    <div class="small-12 large-4 columns">
+      <div class="marketing-box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum expedita officia voluptatum? Asperiores, eos, illum!
+      </div>
+    </div>
+  </div>
 </div>
 
 <?php get_footer(); ?>

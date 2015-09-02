@@ -29,6 +29,29 @@ get_header(); ?>
           </ul>
     <hr>
 
+      <div class="row">
+        <div class="small-6 large-3 columns" role="main">
+          <div class="person-box">
+            <img src="<?php echo get_template_directory_uri()?>/assets/img/avatar.jpg" alt="">
+            <div class="details">
+              <p class="full-name">
+                John Brown
+              </p>
+              <h6>Resposibilities</h6>
+              <p class="responsibilities">
+                Lorem Ipsum <br>
+                Lorem Ipsum
+              </p>
+              <h6>Profiles</h6>
+              <p class="profiles">
+                <a href="#">XING</a>
+                <a href="#">Facebook</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
 	<?php /* Start loop */ ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">

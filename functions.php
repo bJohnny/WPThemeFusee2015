@@ -45,4 +45,9 @@ require_once( 'library/theme-support.php' );
 /** Add Header image */
 require_once( 'library/custom-header.php' );
 
-?>
+/** Import all necessary plugins */
+require_once( 'plugins/advanced-custom-fields/acf.php' );
+require_once( 'plugins/advanced-custom-fields-font-awesome/acf-font-awesome.php' );
+require_once( 'plugins/marketing-boxes/marketing-boxes.php' );
+require_once( 'plugins/orbit-slider.php' );
+require_once( 'plugins/team-profile.php' );

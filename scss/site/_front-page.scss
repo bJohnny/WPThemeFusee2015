@@ -4,8 +4,15 @@
 
 .marketing-box {
   background-color: $primary-gray;
-  padding: rem-calc(91) rem-calc(48);
+  padding: rem-calc(91) rem-calc(48) rem-calc(48) ;
   position: relative;
+  //min-height: rem-calc(410);
+  &>div.text-center{
+    border: 1px solid black;
+    position: relative;
+    bottom: 0;
+  }
+
   .icon {
     position: absolute;
     top: rem-calc(-31);
@@ -24,4 +31,11 @@
       font-size: rem-calc(58);
     }
   }
+
+    a.action-link {
+      font-weight: bold;
+    }
+
+
+
 }

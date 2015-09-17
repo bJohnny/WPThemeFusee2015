@@ -1,7 +1,23 @@
-footer.row {
+#site-footer {
+
   background-color: $primary-gray;
-  min-width: 100%;
+
+  article h6 {
+	font-weight: bold;
+	color: $primary-color;
+	text-decoration: underline;
+
+  }
+  ul {
+	list-style-type: none;
+	padding: 0;
+	margin-left: 0;
+  }
 }
+
+
+
+
 
 // Add some whitespace above the footer for medium-up screens
 @media #{$medium-up} {

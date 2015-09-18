@@ -1,16 +1,22 @@
 .tiles-container {
   margin-top: rem-calc(68);
+  .panel {
+    border: 0;
+    background-color: $body-bg;
+  }
 }
 
 .marketing-box {
   background-color: $primary-gray;
-  padding: rem-calc(91) rem-calc(48) rem-calc(48) ;
+  padding: rem-calc(91) rem-calc(48) rem-calc(54) ;
   position: relative;
-  //min-height: rem-calc(410);
-  &>div.text-center{
-    
-    position: relative;
-    bottom: 0;
+  height: 100%;
+  &>div.pull-down{
+    width: 100%;
+    //border: 1px solid black;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
   }
 
   .icon {
@@ -36,6 +42,5 @@
       font-weight: bold;
     }
 
-
-
 }
+

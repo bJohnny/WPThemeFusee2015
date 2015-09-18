@@ -1,0 +1,40 @@
+#sidebar{
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  h6{
+    
+    font-weight: bold;
+  }
+  .widget_recent_entries{
+//    border: 1px solid black;
+    background-color: $silver;
+    margin: 0 1rem;
+    padding: 1rem 0;
+  }
+  a{
+    color: $body-font-color;
+    &:hover{
+      color: $primary-color;
+    }
+  }
+  input{
+    border-top-left-radius: $search-button-radius;
+    border-bottom-left-radius: $search-button-radius;
+    background-color: $oil;
+    border-color: $oil;
+  }
+  #searchsubmit{
+    border: 1px solid $oil;
+    background-color: $oil;
+    border-top-right-radius: $search-button-radius;
+    border-bottom-right-radius: $search-button-radius;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+  }
+}
+

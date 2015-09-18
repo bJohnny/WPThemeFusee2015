@@ -2,16 +2,22 @@
 
   background-color: $primary-gray;
 
-  article h6 {
+  article{
+	text-align: center;
+
+  }
+  h6 {
 	font-weight: bold;
 	color: $primary-color;
 	text-decoration: underline;
+	font-size: 0.9rem;
 
   }
   ul {
 	list-style-type: none;
 	padding: 0;
 	margin-left: 0;
+	font-size: 0.9rem;
   }
 }
 

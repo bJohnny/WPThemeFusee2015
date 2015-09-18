@@ -45,6 +45,9 @@ require_once( 'library/theme-support.php' );
 /** Add Header image */
 require_once( 'library/custom-header.php' );
 
+/** Add Breadcrumbs */
+require_once( 'library/breadcrumbs.php' );
+
 /** Import all necessary plugins */
 require_once( 'plugins/advanced-custom-fields/acf.php' );
 require_once( 'plugins/advanced-custom-fields-font-awesome/acf-font-awesome.php' );

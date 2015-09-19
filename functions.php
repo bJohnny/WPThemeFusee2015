@@ -50,6 +50,7 @@ require_once( 'library/breadcrumbs.php' );
 
 /** Import all necessary plugins */
 require_once( 'plugin/advanced-custom-fields/acf.php' );
+require_once( 'plugin/advanced-custom-fields-font-awesome/acf-font-awesome.php' );
 require_once( 'plugin/marketing-boxes/marketing-boxes.php' );
 require_once( 'plugin/orbit-slider.php' );
 require_once( 'plugin/team-profile.php' );

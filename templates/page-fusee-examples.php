@@ -18,6 +18,7 @@ get_header(); ?>
 				<div class="entry-content">
 					<?php the_content(); ?>
 				</div>
+			</article>
 
 				<?php
 				$args = array( 'post_type' => 'fusee-examples' );
@@ -79,20 +80,15 @@ get_header(); ?>
 					</article>
 	<hr>
 	<?php endwhile ?>
-	</div>
 
-
-				<footer>
-					<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-					<p><?php /*the_tags();*/ ?></p>
-				</footer>
-				<?php /*comments_template();*/ ?>
-			</article>
-		<?php endwhile; // End the loop ?>
 
 
 	</div>
+	<?php endwhile; // End the loop ?>
+
+
 </div>
+
 
 
 

@@ -49,8 +49,12 @@ require_once( 'library/custom-header.php' );
 require_once( 'library/breadcrumbs.php' );
 
 /** Import all necessary plugins */
+/* umcomment the following to get acces to the ACF Admin Panel in the BE
+* define( 'ACF_LITE', true );
+*/
 require_once( 'plugin/advanced-custom-fields/acf.php' );
 require_once( 'plugin/advanced-custom-fields-font-awesome/acf-font-awesome.php' );
 require_once( 'plugin/marketing-boxes/marketing-boxes.php' );
 require_once( 'plugin/orbit-slider.php' );
 require_once( 'plugin/team-profile.php' );
+require_once( 'plugin/fusee-examples.php' );

@@ -6,6 +6,18 @@
   }
 }
 
+.orbit-container {
+  overflow: hidden;
+  ul li {
+    width: 100%;
+    overflow: hidden;
+  }
+  img{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 .marketing-box {
   background-color: $primary-gray;
   padding: rem-calc(91) rem-calc(48) rem-calc(54) ;

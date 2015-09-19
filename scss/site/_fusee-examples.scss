@@ -1,0 +1,29 @@
+
+
+.download-icon{
+  margin-left: 0.5em;
+  padding: 0;
+  display: inline-block;
+  color: $oil;
+  &:hover{
+    color: $primary-color;
+  }
+}
+// parent of .download-icon
+.download-icons {
+  //display: inline-block;
+}
+
+.fusee-example {
+  .entry-content {
+    h3{
+      //display: inline-block;
+      margin-right: 3rem;
+      margin-bottom: 0rem;
+    }
+    header{
+      margin-bottom: 2rem;
+    }
+  }
+  margin: 4rem 0;
+}

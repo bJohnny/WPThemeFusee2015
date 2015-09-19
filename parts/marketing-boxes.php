@@ -9,8 +9,9 @@
         while ( $loop->have_posts() ) : $loop->the_post();
             $icon = get_field( 'fa_icon' );     // returns html class
             $text = get_field( 'text' );
+            $boolean = get_field( 'boolean' );
             $button_text = get_field( 'button_text' );
-            $button_link = get_field( 'page_link' ) ? get_field( 'page_link' ) : get_field( 'external link' );
+            $button_link = $boolean ?  get_field( 'page_link' ) : get_field( 'external_link' );
             ?>
 
         <div class="small-12 large-4 columns panel" data-equalizer-watch>

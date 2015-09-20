@@ -6,42 +6,9 @@ get_header(); ?>
 <div class="row">
 	<div class="small-12 large-12 columns" role="main">
 
-
+      <?php if(get_field('display_slider')) : ?>
       <?php get_template_part( 'parts/orbit-slider' );     ?>
-
-<!--
-
--->
-<!--
-    <hr>
-
-      <div class="row">
-        <div class="small-6 large-3 columns" role="main">
-          <div class="person-box">
-            <img src="<?php /* echo get_template_directory_uri()*/?>/assets/img/avatar.jpg" alt="">
-            <div class="details">
-              <p class="full-name">
-                John Brown
-              </p>
-              <h6>Resposibilities</h6>
-              <p class="responsibilities">
-                Lorem Ipsum <br>
-                Lorem Ipsum
-              </p>
-              <h6>Profiles</h6>
-              <p class="profiles">
-                <a href="#"><i class="fa fa-facebook-official"></i></a>
-                <a href="#"><i class="fa fa-google-plus-square"></i></a>
-                <a href="#"><i class="fa fa-xing-square"></i></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
--->
-
-
+      <?php endif; ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -63,7 +30,10 @@ get_header(); ?>
 	</div>
 </div>
 
-<?php get_template_part( 'parts/marketing-boxes' ); ?>
+<?php if(get_field('display_marketing_boxes')) : ?>
+  <?php get_template_part( 'parts/marketing-boxes' ); ?>
+<?php endif; ?>
+
 
 
 

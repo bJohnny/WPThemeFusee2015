@@ -39,6 +39,16 @@ function marketing_box_post_type(){
 
     //Register post type
     register_post_type('marketing-box', $args);
+
+    //Register taxonomies
+    register_taxonomy('Categories', 'marketing-box',
+        array(
+            'hierarchical'  =>  false,
+            'label'         =>  __('Display on Site'),
+            'query_var'     =>  'display',
+            'rewrite'       =>  array('slug' => 'display')
+        )
+    );
 }
 
 add_action( 'init', 'marketing_box_post_type' );

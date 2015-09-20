@@ -1,6 +1,6 @@
 <?php
-    $args = array( 'post_type' => 'marketing-box' );
-    $loop = new WP_Query( $args );
+$args = array( 'post_type' => 'marketing-box' );
+$loop = new WP_Query( $args );
 ?>
 <div class="tiles-container">
     <div class="row" data-equalizer>
@@ -14,17 +14,18 @@
             $button_link = $boolean ?  get_field( 'page_link' ) : get_field( 'external_link' );
             ?>
 
-        <div class="small-12 large-4 columns panel" data-equalizer-watch>
-            <div class="marketing-box">
-                <div class="icon">
-                    <i class="fa <?php echo $icon; ?>"></i>
-                </div>
-                <p><?php echo $text; ?></p>
-                <div class="text-center pull-down">
-                    <h4><a class="action-link" href="<?php echo $button_link; ?>"><?php echo $button_text; ?> <i class="fa fa-caret-right"></i></a></h4>
+
+            <div class="small-12 large-4 columns panel" data-equalizer-watch>
+                <div class="marketing-box">
+                    <div class="icon">
+                        <i class="fa <?php echo $icon; ?>"></i>
+                    </div>
+                    <p><?php echo $text; ?></p>
+                    <div class="text-center pull-down">
+                        <h4><a class="action-link" href="<?php echo $button_link; ?>"><?php echo $button_text; ?> <i class="fa fa-caret-right"></i></a></h4>
+                    </div>
                 </div>
             </div>
-        </div>
         <?php endwhile; ?>
     </div>
 </div>

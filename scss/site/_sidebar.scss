@@ -1,9 +1,11 @@
 #sidebar{
+
   ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
     font-size: 0.9rem;
+
   }
   h6{
     
@@ -12,6 +14,7 @@
   .widget_recent_entries{
 //    border: 1px solid black;
     background-color: $silver;
+    background-color: pink;
     margin: 0 1rem;
     padding: 1rem 0;
   }

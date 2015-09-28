@@ -39,7 +39,7 @@ function marketing_box_post_type(){
 
     //Register post type
     register_post_type('marketing-box', $args);
-    
+
 }
 
 add_action( 'init', 'marketing_box_post_type' );
